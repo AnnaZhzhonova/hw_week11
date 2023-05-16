@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Корзина</title>
+  </head>
+  <body>
+    <section class="basket">
+      <div class="container">
+        <h1 class="basket__title">Корзина</h1>
+        <div class="product">
+          <div class="product__pic">
+            <img src="./assets/images/Vans.jpg" alt="vans" />
+          </div>
+          <div class="product__info">
+            <div class="product__desc">
+              <h2 class="product__title">Vans</h2>
+              <p class="product__model">Кеды UA OLD SCHOOL</p>
+            </div>
+            <span class="product__price">8400</span>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__pic">
+            <img src="./assets/images/newBalance.jpg" alt="newBalance" />
+          </div>
+          <div class="product__info">
+            <div class="product__desc">
+              <h2 class="product__title">New Balance</h2>
+              <p class="product__model">Кроссовки New Balance 530</p>
+            </div>
+            <span class="product__price">1600</span>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__pic">
+            <img src="./assets/images/reebok.jpg" alt="reebok" />
+          </div>
+          <div class="product__info">
+            <div class="product__desc">
+              <h2 class="product__title">Reebok</h2>
+              <p class="product__model">
+                Кроссовки Reebok Club C Mid 2 Vintage 'Chalk Glen Green'
+              </p>
+            </div>
+            <span class="product__price">1700</span>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__pic">
+            <img src="./assets/images/nike.jpg" alt="nike" />
+          </div>
+          <div class="product__info">
+            <div class="product__desc">
+              <h2 class="product__title">Nike</h2>
+              <p class="product__model">Кроссовки Nike Air Force 1'07 AN20</p>
+            </div>
+            <span class="product__price">9000</span>
+          </div>
+        </div>
+        <div class="outcome">
+          <button class="discount-btn" onclick="getDiscount ()">
+            Использовать купон на 20%
+          </button>
+          <div>
+            <p class="outcome__text">
+              Итого: <span id="outcome__price">0</span> руб.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
