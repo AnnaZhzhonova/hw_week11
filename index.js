@@ -11,11 +11,14 @@ totalProductPrice.textContent = sumPrice;
 
 const discountBtn = document.querySelector('.discount-btn');
 
-discountBtn.onclick = function (){
+discountBtn.addEventListener('click', () => {
   totalProductPrice.textContent = sumPrice * discount;
-  firstPrice.textContent = Number(firstPrice.textContent) * discount
-  secondPrice.textContent = Number(secondPrice.textContent) * discount
-  thirdPrice.textContent = Number(thirdPrice.textContent) * discount
-  fourthPrice.textContent = Number(fourthPrice.textContent) * discount
+  firstPrice.textContent = Number(firstPrice.textContent) * discount;
+  secondPrice.textContent = Number(secondPrice.textContent) * discount;
+  thirdPrice.textContent = Number(thirdPrice.textContent) * discount;
+  fourthPrice.textContent = Number(fourthPrice.textContent) * discount;
 }
-
+,{
+  once: true,
+}
+)
