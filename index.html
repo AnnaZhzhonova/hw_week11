@@ -91,11 +91,19 @@
       </div>
     </section>
     <section>
-      <div class="ontainer">
+      <div class="container">
         <h2 class="title">Задание со ***</h2>
-        <input type="text" />
-        <input type="text" />
-        <input type="button" value="рассчитать" />
+        <div class="calculator">
+          <input class="input" id="input-enter" type="number" value="" />
+          <input
+            class="input"
+            id="input-result"
+            type="number"
+            value=""
+            readonly
+          />
+          <input class="btn" id="calc-btn" type="button" value="рассчитать" />
+        </div>
       </div>
     </section>
     <script src="index.js"></script>
