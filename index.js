@@ -29,9 +29,9 @@ discountBtn.addEventListener(
   }
 );
 
-let enterNumber = document.querySelector("#input-enter");
-let showResult = document.querySelector("#input-result");
-let calcBtn = document.querySelector("#calc-btn");
+const enterNumber = document.querySelector("#input-enter");
+const showResult = document.querySelector("#input-result");
+const calcBtn = document.querySelector("#calc-btn");
 
 const calcResult = () => {
   const result = Math.pow(enterNumber.value, 2);
